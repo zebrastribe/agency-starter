@@ -1,0 +1,29 @@
+:root{--agency-container-padding-x:1rem;--agency-container-size:75rem;--agency-header-height:72px}
+@media(min-width:36em){:root{--agency-container-padding-x:2rem}}
+.agency-container{width:100%;max-width:var(--agency-container-size);margin-inline:auto;padding-inline:var(--agency-container-padding-x);box-sizing:border-box}
+.site-header-shell{position:sticky;top:0;z-index:40;background:var(--wp--preset--color--background,#fff)}
+.site-header{border-bottom:1px solid var(--wp--preset--color--border,#e5e7eb)}
+.site-header__inner{display:flex;align-items:center;gap:24px;min-height:var(--agency-header-height,72px);padding-block:16px}
+.site-header__brand{flex:0 0 auto;min-width:0;max-width:min(12rem,48vw)}
+.site-brand-lockup{display:flex;flex-direction:column;align-items:flex-start;gap:.35rem;min-width:0}
+.site-brand-tagline{color:var(--wp--preset--color--muted,#4b5563);font-weight:500;letter-spacing:.01em;line-height:1.35;margin:0;max-width:14rem}
+@media(min-width:48em){
+.site-header__brand{max-width:min(22rem,56vw)}
+.site-header__brand .site-brand-lockup{flex-direction:row;align-items:end;gap:.75rem}
+.site-header__brand .site-brand-lockup .wp-block-site-logo a{min-height:0;padding-block:0}
+.site-header__brand .wp-block-site-logo img{object-position:left bottom}
+.site-header__brand .site-brand-tagline{max-width:9.5rem}
+}
+.site-header__brand .wp-block-site-logo{display:flex;align-items:center;line-height:0;margin:0}
+.site-header__brand .wp-block-site-logo a{display:block;line-height:0;min-height:44px;min-width:44px;padding:2px 0}
+.site-header__brand .wp-block-site-logo img{display:block;height:auto;width:auto;max-width:min(11rem,44vw);max-height:clamp(2rem,4.8vw,3.25rem);object-fit:contain;object-position:left center}
+.site-header__actions{display:flex;align-items:center;justify-content:flex-end;gap:24px;flex:0 0 auto;margin-inline-start:auto;min-height:44px}
+.site-header .wp-block-site-title a{font-size:1.25rem;font-weight:700;color:var(--wp--preset--color--foreground,#1f2937);text-decoration:none}
+.site-header .desktop-nav{display:none}
+.site-header .wp-block-navigation__container{display:flex;flex-wrap:nowrap;align-items:center;gap:24px;list-style:none;margin:0;padding:0}
+.site-header .wp-block-navigation-item__content{font-size:.875rem;font-weight:600;color:var(--wp--preset--color--foreground,#1f2937);text-decoration:none;padding:.375rem 0;white-space:nowrap}
+.site-header .mobile-nav-toggle{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:44px;flex-shrink:0;color:var(--wp--preset--color--foreground,#1f2937)}
+@media(min-width:64em){
+.site-header .desktop-nav{display:flex}
+.site-header .mobile-nav-toggle{display:none}
+}

@@ -1,0 +1,265 @@
+/**
+ * Mantine layout primitives — Container, Stack, AppShell.Main
+ * @see https://mantine.dev/core/container/
+ * @see https://mantine.dev/core/stack/
+ */
+
+:root {
+	/* Mantine Container sizes (lg = 75rem / 1200px, sm = 45rem / 720px) */
+	--agency-container-size: var(--wp--style--global--wide-size, 75rem);
+	--agency-container-size-sm: var(--wp--style--global--content-size, 45rem);
+
+	/* Mantine Container px: md mobile → xl desktop */
+	--agency-container-padding-x: var(--wp--preset--spacing--md, 1rem);
+
+	/* Mantine Stack gaps */
+	--agency-stack-gap: var(--wp--preset--spacing--md, 1rem);
+	--agency-stack-gap-lg: var(--wp--preset--spacing--xl, 2rem);
+
+	/* AppShell.Main vertical padding */
+	--agency-main-padding-y: var(--wp--preset--spacing--3xl, 4rem);
+}
+
+@media (min-width: 36em) {
+	:root {
+		--agency-container-padding-x: var(--wp--preset--spacing--xl, 2rem);
+	}
+}
+
+/* ─── Container (Mantine Container) ─────────────────────── */
+
+.agency-container {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: var(--agency-container-size);
+	margin-inline: auto;
+	padding-inline: var(--agency-container-padding-x);
+}
+
+.agency-container--narrow {
+	max-width: var(--agency-container-size-sm);
+}
+
+/* WP constrained layout caps at 720px — override for our containers */
+.agency-container.is-layout-constrained,
+.agency-container.wp-block-group-is-layout-constrained {
+	max-width: var(--agency-container-size) !important;
+}
+
+.agency-container--narrow.is-layout-constrained,
+.agency-container--narrow.wp-block-group-is-layout-constrained {
+	max-width: var(--agency-container-size-sm) !important;
+}
+
+/* Do not re-constrain children inside Container */
+.agency-container.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)),
+.agency-container.wp-block-group-is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+	max-width: none !important;
+	margin-inline: unset !important;
+}
+
+/* ─── Stack (Mantine Stack) ─────────────────────────────── */
+
+.agency-stack {
+	display: flex;
+	flex-direction: column;
+	gap: var(--agency-stack-gap);
+}
+
+.agency-stack--lg {
+	gap: var(--agency-stack-gap-lg);
+}
+
+.agency-section .agency-container {
+	display: flex;
+	flex-direction: column;
+	gap: var(--agency-stack-gap-lg);
+}
+
+.agency-section .agency-container > :last-child {
+	margin-bottom: 0;
+}
+
+/* ─── AppShell.Main ───────────────────────────────────────── */
+
+.wp-site-blocks {
+	width: 100%;
+}
+
+.agency-main {
+	width: 100%;
+	max-width: none;
+	margin: 0;
+	padding: 0;
+}
+
+.agency-main__inner {
+	padding-block: var(--agency-main-padding-y);
+}
+
+.agency-main > .entry-content,
+.agency-main > .wp-block-post-content,
+.agency-main .entry-content,
+.agency-main .wp-block-post-content {
+	width: 100%;
+	max-width: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* Pattern pages: sections own vertical rhythm — no block gap between siblings */
+.agency-main > .wp-block-post-content,
+.agency-main > .entry-content {
+	gap: 0;
+}
+
+.agency-main > .wp-block-post-content > *,
+.agency-main > .entry-content > * {
+	margin-block: 0;
+}
+
+/* Prose pages: Stack inside narrow container */
+.agency-main__inner.agency-container--narrow {
+	display: flex;
+	flex-direction: column;
+	gap: var(--agency-stack-gap-lg);
+}
+
+.agency-main__inner.agency-container--narrow > * {
+	margin-block: 0;
+}
+
+.agency-main__inner .wp-block-post-content {
+	display: flex;
+	flex-direction: column;
+	gap: var(--agency-stack-gap);
+}
+
+/* ─── Full-bleed sections (alignfull) ───────────────────── */
+
+.agency-main .wp-block-post-content > .alignfull,
+.agency-main .entry-content > .alignfull,
+.wp-block-post-content > .alignfull.agency-section {
+	width: 100%;
+	max-width: none;
+	margin-inline: 0;
+}
+
+/* ─── Section rhythm (Mantine spacing scale) ─────────────── */
+
+.agency-section {
+	padding-block: var(--wp--preset--spacing--4xl, 6rem);
+}
+
+.agency-section--compact {
+	padding-block: var(--wp--preset--spacing--2xl, 3rem);
+}
+
+@media (max-width: 48em) {
+	:root {
+		--agency-main-padding-y: var(--wp--preset--spacing--2xl, 3rem);
+	}
+
+	.agency-section {
+		padding-block: var(--wp--preset--spacing--3xl, 4rem);
+	}
+
+	.agency-section--compact {
+		padding-block: var(--wp--preset--spacing--xl, 2rem);
+	}
+}
+
+/* ─── Neutralise WP block margins inside sections ─────────── */
+
+.agency-section :where(.wp-block-columns) {
+	margin-bottom: 0;
+}
+
+.agency-section :where(.wp-block-heading, p, .wp-block-buttons) {
+	margin-block-start: 0;
+}
+
+.agency-section__title {
+	margin-block-end: 0;
+}
+
+/* ─── Header / footer container alignment ───────────────── */
+
+.site-header__inner.agency-container,
+.agency-utility-bar .agency-container,
+.site-footer .agency-container {
+	padding-inline: var(--agency-container-padding-x);
+	max-width: var(--agency-container-size);
+}
+
+.site-footer .agency-container {
+	display: flex;
+	flex-direction: column;
+	gap: var(--agency-stack-gap-lg);
+}
+
+.site-header__inner {
+	box-sizing: border-box;
+	width: 100%;
+}
+
+/* ─── Query / archive grids inside main ─────────────────── */
+
+.agency-main__inner > .wp-block-query {
+	width: 100%;
+}
+
+.agency-main__inner .wp-block-query.is-layout-constrained {
+	max-width: none !important;
+}
+
+/* ─── Breadcrumbs / entry meta ───────────────────────────── */
+
+.agency-breadcrumbs {
+	margin: 0;
+	padding: 0;
+}
+
+.agency-breadcrumbs p {
+	margin: 0;
+}
+
+.agency-entry-meta {
+	gap: var(--wp--preset--spacing--md, 1rem);
+	margin: 0;
+}
+
+.agency-entry-meta p {
+	margin: 0;
+}
+
+/* ─── Query pagination ──────────────────────────────────── */
+
+.agency-section .wp-block-query-pagination,
+.agency-container .wp-block-query-pagination {
+	margin-block: var(--wp--preset--spacing--xl, 2rem) 0;
+	padding: 0;
+}
+
+.agency-section .wp-block-query-pagination :where(.wp-block-query-pagination-previous, .wp-block-query-pagination-next, .wp-block-query-pagination-numbers) {
+	margin: 0;
+}
+
+/* ─── Nested full-bleed safety (legacy template wrappers) ─── */
+
+.agency-main__inner > .alignfull,
+.agency-container:not(.alignfull) > .alignfull.agency-section {
+	width: 100vw;
+	max-width: 100vw;
+	margin-inline: calc(50% - 50vw);
+}
+
+.agency-breadcrumbs__nav a { color: var(--wp--preset--color--muted, #4b5563); text-decoration: none; }
+.agency-breadcrumbs__nav a:hover { color: var(--wp--preset--color--primary, #570df8); text-decoration: underline; }
+
+.agency-utility-bar__sep {
+	color: var(--wp--preset--color--slate, #6b7280);
+	font-size: var(--wp--preset--font-size--sm, 0.875rem);
+}
+
+/* FAQ accordion styles: agency-faq-section.css */

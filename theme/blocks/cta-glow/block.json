@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "agency-starter/cta-glow",
+	"title": "CTA Glow Card",
+	"category": "agency-starter",
+	"icon": "megaphone",
+	"description": "Centered conversion card with a soft accent gradient glow and optional subtle animation.",
+	"keywords": [ "cta", "conversion", "banner", "glow", "breaker" ],
+	"textdomain": "agency-starter",
+	"attributes": {
+		"heading": {
+			"type": "string",
+			"default": "Hiring internationally, converting contractors, or consolidating payroll?"
+		},
+		"subheading": { "type": "string", "default": "Talk to our team." },
+		"ctaLabel": { "type": "string", "default": "Book demo" },
+		"ctaUrl": { "type": "string", "default": "/contact/" },
+		"sectionColor": { "type": "string", "default": "surface-alt" },
+		"accentColor": { "type": "string", "default": "accent" },
+		"glowPosition": { "type": "string", "default": "bottom-left" },
+		"showGlow": { "type": "boolean", "default": true },
+		"enableAnimation": { "type": "boolean", "default": true }
+	},
+	"supports": { "html": false, "align": [ "full" ] },
+	"render": "file:./render.php"
+}

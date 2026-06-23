@@ -1,0 +1,8 @@
+/**
+ * Tailwind Typography — editorial views only (see inc/performance.php).
+ */
+@import "./tailwind/custom/file-header.css";
+@import "tailwindcss/theme";
+@import "./tailwind/tailwind-theme.css";
+@import "./tailwind/tailwind-typography.css";
+@import "tailwindcss/utilities";

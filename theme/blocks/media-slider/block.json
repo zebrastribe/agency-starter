@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "agency-starter/media-slider",
+	"title": "Media Slider",
+	"category": "agency-starter",
+	"icon": "images-alt2",
+	"description": "Full-width carousel for testimonials, case studies, or featured stories.",
+	"keywords": [ "testimonial", "slider", "carousel", "reviews", "case study" ],
+	"textdomain": "agency-starter",
+	"attributes": {
+		"eyebrow": { "type": "string", "default": "Lorem ipsum" },
+		"heading": { "type": "string", "default": "Dolor sit amet consectetur" },
+		"intro": {
+			"type": "string",
+			"default": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+		},
+		"slides": { "type": "array", "default": [] }
+	},
+	"supports": { "html": false, "align": [ "full" ] },
+	"viewScript": "agency-starter-media-slider",
+	"render": "file:./render.php"
+}

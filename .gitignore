@@ -1,0 +1,15 @@
+# Dependencies
+/node_modules
+/vendor
+
+# Local tooling output (not the shipped theme bundle)
+tailwind-intellisense.css
+agency-starter.zip
+
+# Test and tooling artifacts
+/test-results
+/tests/e2e-report
+/node_modules/.vite
+
+# macOS
+.DS_Store

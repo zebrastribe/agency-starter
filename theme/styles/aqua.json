@@ -1,0 +1,48 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Aqua",
+	"settings": {
+		"color": {
+			"palette": [
+				{ "slug": "background", "color": "#345DA7", "name": "Background" },
+				{ "slug": "surface", "color": "#345DA7", "name": "Surface" },
+				{ "slug": "foreground", "color": "#E0F2FE", "name": "Foreground" },
+				{ "slug": "ink", "color": "#E0F2FE", "name": "Ink" },
+				{ "slug": "primary", "color": "#5EEAD4", "name": "Primary" },
+				{ "slug": "primary-hover", "color": "#2DD4BF", "name": "Primary Hover" },
+				{ "slug": "primary-subtle", "color": "#1E3A5F", "name": "Primary Subtle" },
+				{ "slug": "secondary", "color": "#C084FC", "name": "Secondary" },
+				{ "slug": "secondary-hover", "color": "#A855F7", "name": "Secondary Hover" },
+				{ "slug": "secondary-subtle", "color": "#3B0764", "name": "Secondary Subtle" },
+				{ "slug": "accent", "color": "#FDE047", "name": "Accent" },
+				{ "slug": "surface-alt", "color": "#2A4A85", "name": "Surface Alt" },
+				{ "slug": "surface-dark", "color": "#1E3A5F", "name": "Surface Dark" },
+				{ "slug": "slate", "color": "#BAE6FD", "name": "Slate" },
+				{ "slug": "muted", "color": "#E0F2FE", "name": "Muted" },
+				{ "slug": "inverse", "color": "#134E4A", "name": "Inverse" },
+				{ "slug": "border", "color": "#3B5998", "name": "Border" }
+			]
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "var(--wp--preset--color--background)",
+			"text": "var(--wp--preset--color--foreground)"
+		},
+		"elements": {
+			"heading": {
+				"color": { "text": "var(--wp--preset--color--foreground)" }
+			},
+			"link": {
+				"color": { "text": "var(--wp--preset--color--foreground)" }
+			},
+			"button": {
+				"color": {
+					"background": "var(--wp--preset--color--primary)",
+					"text": "var(--wp--preset--color--inverse)"
+				}
+			}
+		}
+	}
+}

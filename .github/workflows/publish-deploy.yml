@@ -1,0 +1,41 @@
+name: Publish deploy branch
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - run: npm ci
+      - run: npm run production
+
+      - name: Build deploy tree
+        run: |
+          chmod +x node_scripts/export-deploy-root.sh
+          ./node_scripts/export-deploy-root.sh .deploy-root
+
+      - name: Push deploy branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin deploy || true
+          git checkout --orphan deploy-tmp
+          git rm -rf . 2>/dev/null || true
+          cp -a .deploy-root/. .
+          git add -A
+          git commit -m "Deploy theme $(node -p "require('fs').readFileSync('style.css','utf8').match(/Version:\\s*([^\\n]+)/i)?.[1]?.trim() || 'unknown'")"
+          git branch -M deploy
+          git push -f origin deploy

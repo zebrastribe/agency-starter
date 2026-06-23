@@ -1,0 +1,97 @@
+/**
+ * Agency Starter — CSS-only motion (Step 1).
+ * Tokens: theme.json settings.custom.motion → --wp--custom--motion--*
+ * No scroll listeners. No JS. See animation-investigation/ and theme-investigation/06.
+ */
+
+@keyframes agency-fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes agency-slide-up {
+	from {
+		transform: translateY(var(--wp--custom--motion--distance--md, 16px));
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+
+@keyframes agency-enter-subtle {
+	from {
+		transform: translateY(var(--wp--custom--motion--distance--sm, 8px));
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+
+/* Non-LCP elements only — do not use on hero H1 if it is the LCP candidate */
+.agency-motion-fade-in {
+	animation: agency-fade-in var(--wp--custom--motion--duration--normal, 250ms)
+		var(--wp--custom--motion--easing--entrance, cubic-bezier(0, 0, 0.2, 1)) both;
+	animation-delay: var(--agency-motion-delay, 0ms);
+}
+
+.agency-motion-slide-up {
+	animation: agency-slide-up var(--wp--custom--motion--duration--normal, 250ms)
+		var(--wp--custom--motion--easing--entrance, cubic-bezier(0, 0, 0.2, 1)) both;
+	animation-delay: var(--agency-motion-delay, 0ms);
+}
+
+/* LCP-safe: opacity stays 1 throughout */
+.agency-motion-enter-subtle {
+	animation: agency-enter-subtle var(--wp--custom--motion--duration--normal, 250ms)
+		var(--wp--custom--motion--easing--entrance, cubic-bezier(0, 0, 0.2, 1)) both;
+	animation-delay: var(--agency-motion-delay, 0ms);
+}
+
+.agency-motion-delay-sm {
+	--agency-motion-delay: var(--wp--custom--motion--delay--small, 100ms);
+}
+
+.agency-motion-delay-md {
+	--agency-motion-delay: var(--wp--custom--motion--delay--medium, 200ms);
+}
+
+.agency-motion-delay-lg {
+	--agency-motion-delay: var(--wp--custom--motion--delay--large, 400ms);
+}
+
+/* Card hover — interaction-initiated, no scroll JS */
+.agency-card {
+	transition: transform var(--wp--custom--motion--duration--fast, 150ms)
+		var(--wp--custom--motion--easing--hover, cubic-bezier(0.4, 0, 0.2, 1));
+}
+
+@media (hover: hover) and (pointer: fine) {
+	a.agency-card:hover,
+	a.agency-card:focus-visible {
+		transform: translateY(-2px);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.agency-motion-fade-in,
+	.agency-motion-slide-up,
+	.agency-motion-enter-subtle {
+		animation: none !important;
+	}
+
+	.agency-card {
+		transition: none;
+	}
+
+	.agency-hero-interactive__dot,
+	.agency-logo-cloud__item,
+	.agency-cta-glow--animate .agency-cta-glow__glow {
+		transition: none !important;
+		animation: none !important;
+		transform: none !important;
+	}
+}

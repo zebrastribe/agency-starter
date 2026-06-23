@@ -1,0 +1,112 @@
+/**
+ * Custom styles to immediately follow Tailwind’s `components` layer
+ */
+
+.page-title,
+.entry-title {
+	@apply text-3xl font-extrabold;
+	margin-block: 0;
+}
+
+.entry-meta,
+.entry-footer,
+.post-navigation,
+#comments {
+	margin-block: 0;
+}
+
+/**
+ * Content width — defer to Mantine Container (.agency-container) and
+ * full-bleed sections (.alignfull.agency-section). Do not auto-constrain
+ * pattern sections or groups inside .agency-main.
+ */
+.agency-main .wp-block-post-content > *:not(.alignfull):not(.alignwide):not(.agency-section),
+.agency-main .entry-content > *:not(.alignfull):not(.alignwide):not(.agency-section) {
+	max-width: none;
+	margin-inline: 0;
+}
+
+.page-content > *:not(.alignfull):not(.alignwide):not(.agency-section):not(.wp-block-group):not(.agency-container),
+.entry-content > *:not(.alignfull):not(.alignwide):not(.agency-section):not(.wp-block-group):not(.agency-container) {
+	max-width: var(--wp--style--global--content-size, 45rem);
+	margin-inline: auto;
+}
+
+.entry-content > .alignwide,
+.wp-block-post-content > .alignwide {
+	max-width: var(--wp--style--global--wide-size, 75rem);
+	margin-inline: auto;
+	padding-inline: var(--agency-container-padding-x, 1rem);
+}
+
+.entry-content > .alignfull,
+.wp-block-post-content > .alignfull {
+	max-width: none;
+	width: 100%;
+	margin-inline: 0;
+}
+
+.entry-content > .alignleft {
+	@apply float-left mr-8;
+}
+
+.entry-content > .alignright {
+	@apply float-right ml-8;
+}
+
+.skip-link {
+	@apply sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-primary focus:px-4 focus:py-2 focus:text-inverse;
+}
+
+.job-status-badge {
+	@apply inline-block w-fit max-w-full self-start rounded-sm bg-primary-subtle px-2 py-1 text-xs font-semibold uppercase text-primary;
+}
+
+.bg-surface-dark {
+	background-color: var(--wp--preset--color--surface-dark);
+}
+
+.text-inverse {
+	color: var(--wp--preset--color--inverse);
+}
+
+.border-border {
+	border-color: var(--wp--preset--color--border);
+}
+
+.bg-surface-alt {
+	background-color: var(--wp--preset--color--surface-alt);
+}
+
+.bg-primary {
+	background-color: var(--wp--preset--color--primary);
+}
+
+.bg-secondary {
+	background-color: var(--wp--preset--color--secondary);
+}
+
+.text-primary {
+	color: var(--wp--preset--color--primary);
+}
+
+.text-muted {
+	color: var(--wp--preset--color--muted);
+}
+
+.text-slate {
+	color: var(--wp--preset--color--slate);
+}
+
+.gap-xl {
+	gap: var(--wp--preset--spacing--xl);
+}
+
+.gap-md {
+	gap: var(--wp--preset--spacing--md);
+}
+
+.py-3xl {
+	padding-top: var(--wp--preset--spacing--3xl);
+	padding-bottom: var(--wp--preset--spacing--3xl);
+}
