@@ -134,6 +134,9 @@ $resolve_href = static function ( $href ) {
 						'data-hero-slide'   => '',
 						'data-slide-index'  => (string) $slide_index,
 					);
+					if ( $use_cover_image ) {
+						$slide_attrs['data-hero-swipe'] = '';
+					}
 					if ( $use_cover_image && ! empty( $slide['imageUrl'] ) ) {
 						$slide_attrs['style'] = sprintf(
 							'background-image: url(%s);',
@@ -174,15 +177,16 @@ $resolve_href = static function ( $href ) {
 								<?php endif; ?>
 							</div>
 						<?php else : ?>
-							<figure class="agency-hero-interactive__figure">
+							<figure class="agency-hero-interactive__figure" data-hero-swipe>
 						<?php
 						echo agency_starter_render_image( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped in helper.
 							array(
-								'id'      => (int) ( $slide['imageId'] ?? 0 ),
-								'url'     => $slide['imageUrl'],
-								'alt'     => '',
-								'size'    => 'hero',
-								'loading' => 0 === $slide_index ? 'eager' : 'lazy',
+								'id'         => (int) ( $slide['imageId'] ?? 0 ),
+								'url'        => $slide['imageUrl'],
+								'alt'        => '',
+								'size'       => 'hero',
+								'loading'    => 0 === $slide_index ? 'eager' : 'lazy',
+								'draggable'  => false,
 							)
 						);
 						?>

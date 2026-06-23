@@ -451,10 +451,17 @@ a.agency-btn.agency-btn--on-dark:hover {
 
 /* ─── Header ─────────────────────────────────────────────── */
 
+.site-header-shell {
+	overflow-x: clip;
+	max-width: 100%;
+}
+
 .agency-utility-bar {
 	background: var(--wp--preset--color--surface-alt, #f9f9f9);
 	border-bottom: 1px solid var(--wp--preset--color--border, #e5e7eb);
 	font-size: var(--wp--preset--font-size--sm, 0.875rem);
+	overflow-x: clip;
+	max-width: 100%;
 }
 
 .agency-utility-bar .agency-container {
@@ -630,7 +637,6 @@ a.agency-btn.agency-btn--on-dark:hover {
 	max-height: clamp(2rem, 4.8vw, 3.25rem);
 	object-fit: contain;
 	object-position: left center;
-	overflow: visible;
 }
 
 @media (min-width: 48em) {
@@ -867,6 +873,13 @@ a.agency-btn.agency-btn--on-dark:hover {
 	display: block;
 }
 
+.mobile-nav-panel .mobile-nav-link:focus-visible {
+	outline: none;
+	box-shadow:
+		0 0 0 2px var(--wp--preset--color--surface-dark, #111827),
+		0 0 0 4px rgb(255 255 255 / 0.55);
+}
+
 /* Polylang switcher in utility bar */
 .agency-utility-bar .wp-block-polylang-language-switcher ul,
 .agency-utility-bar .wp-block-polylang-language-switcher {
@@ -942,7 +955,6 @@ a.agency-btn.agency-btn--on-dark:hover {
 	max-width: min(10.5rem, 52vw);
 	object-fit: contain;
 	object-position: left center;
-	overflow: visible;
 	width: auto;
 }
 

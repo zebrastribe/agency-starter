@@ -94,4 +94,78 @@ document.querySelectorAll('[data-agency-hero-interactive]').forEach((root) => {
 	});
 
 	activateSlide(0);
+
+	if (slides.length > 1) {
+		const swipeThreshold = 48;
+		const swipeZones = root.querySelectorAll('[data-hero-swipe]');
+
+		const getActiveIndex = () => {
+			const index = Number(root.dataset.activeSlide);
+			return Number.isNaN(index) ? 0 : index;
+		};
+
+		const isSwipeStart = (target) => {
+			if (!(target instanceof Element)) {
+				return false;
+			}
+
+			if (target.closest('a, button')) {
+				return false;
+			}
+
+			if (target.closest('.agency-hero-interactive__caption')) {
+				return false;
+			}
+
+			return Boolean(target.closest('[data-hero-swipe]'));
+		};
+
+		swipeZones.forEach((zone) => {
+			let dragStartX = 0;
+			let isDragging = false;
+
+			const endDrag = (event) => {
+				if (!isDragging) {
+					return;
+				}
+
+				isDragging = false;
+				zone.classList.remove('is-dragging');
+
+				if (zone.hasPointerCapture(event.pointerId)) {
+					zone.releasePointerCapture(event.pointerId);
+				}
+
+				const delta = dragStartX - event.clientX;
+
+				if (Math.abs(delta) > swipeThreshold) {
+					activateSlide(getActiveIndex() + (delta > 0 ? 1 : -1));
+				}
+			};
+
+			zone.addEventListener('pointerdown', (event) => {
+				if (event.pointerType === 'mouse' && event.button !== 0) {
+					return;
+				}
+
+				if (!isSwipeStart(event.target)) {
+					return;
+				}
+
+				event.preventDefault();
+
+				isDragging = true;
+				dragStartX = event.clientX;
+				zone.classList.add('is-dragging');
+				zone.setPointerCapture(event.pointerId);
+			});
+
+			zone.addEventListener('pointerup', endDrag);
+			zone.addEventListener('pointercancel', endDrag);
+
+			zone.addEventListener('dragstart', (event) => {
+				event.preventDefault();
+			});
+		});
+	}
 });

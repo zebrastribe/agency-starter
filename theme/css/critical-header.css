@@ -1,8 +1,8 @@
 :root{--agency-container-padding-x:1rem;--agency-container-size:75rem;--agency-header-height:72px}
 @media(min-width:36em){:root{--agency-container-padding-x:2rem}}
 .agency-container{width:100%;max-width:var(--agency-container-size);margin-inline:auto;padding-inline:var(--agency-container-padding-x);box-sizing:border-box}
-.site-header-shell{position:sticky;top:0;z-index:40;background:var(--wp--preset--color--background,#fff)}
-.site-header{border-bottom:1px solid var(--wp--preset--color--border,#e5e7eb)}
+.site-header-shell{position:sticky;top:0;z-index:40;background:var(--wp--preset--color--background,#fff);overflow-x:clip;max-width:100%}
+.site-header{border-bottom:1px solid var(--wp--preset--color--border,#e5e7eb);overflow-x:clip;max-width:100%}
 .site-header__inner{display:flex;align-items:center;gap:24px;min-height:var(--agency-header-height,72px);padding-block:16px}
 .site-header__brand{flex:0 0 auto;min-width:0;max-width:min(12rem,48vw)}
 .site-brand-lockup{display:flex;flex-direction:column;align-items:flex-start;gap:.35rem;min-width:0}
