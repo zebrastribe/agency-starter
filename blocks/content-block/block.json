@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "agency-starter/content-block",
+	"title": "Content Block",
+	"category": "agency-starter",
+	"icon": "align-pull-left",
+	"description": "Two-column editorial breaker or in-page section with theme color, image, and column layout options.",
+	"keywords": [ "content", "split", "feature", "image", "breaker", "band" ],
+	"textdomain": "agency-starter",
+	"attributes": {
+		"eyebrow": { "type": "string", "default": "" },
+		"heading": {
+			"type": "string",
+			"default": "Reduce exposure across every worker type"
+		},
+		"body": {
+			"type": "string",
+			"default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+		},
+		"ctaLabel": { "type": "string", "default": "Book a free 30-minute demo" },
+		"ctaUrl": { "type": "string", "default": "/contact/" },
+		"imageUrl": { "type": "string", "default": "" },
+		"imageId": { "type": "number" },
+		"imageAlt": { "type": "string", "default": "" },
+		"mediaPosition": { "type": "string", "default": "right" },
+		"imageDisplay": { "type": "string", "default": "inline" },
+		"placement": { "type": "string", "default": "default" },
+		"sectionColor": { "type": "string", "default": "background" }
+	},
+	"supports": { "html": false, "align": [ "full" ] },
+	"render": "file:./render.php"
+}

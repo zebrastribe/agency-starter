@@ -1,0 +1,467 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 3,
+    "settings": {
+        "appearanceTools": false,
+        "color": {
+            "custom": true,
+            "customDuotone": true,
+            "customGradient": true,
+            "defaultPalette": false,
+            "defaultGradients": false,
+            "defaultDuotone": false,
+            "palette": [
+                {
+                    "slug": "background",
+                    "color": "#FFFFFF",
+                    "name": "Background"
+                },
+                {
+                    "slug": "surface",
+                    "color": "#FFFFFF",
+                    "name": "Surface"
+                },
+                {
+                    "slug": "foreground",
+                    "color": "#1F2937",
+                    "name": "Foreground"
+                },
+                {
+                    "slug": "ink",
+                    "color": "#1F2937",
+                    "name": "Ink"
+                },
+                {
+                    "slug": "primary",
+                    "color": "#570DF8",
+                    "name": "Primary"
+                },
+                {
+                    "slug": "primary-hover",
+                    "color": "#4506CB",
+                    "name": "Primary Hover"
+                },
+                {
+                    "slug": "primary-subtle",
+                    "color": "#EDE9FE",
+                    "name": "Primary Subtle"
+                },
+                {
+                    "slug": "secondary",
+                    "color": "#F000B8",
+                    "name": "Secondary"
+                },
+                {
+                    "slug": "secondary-hover",
+                    "color": "#9D0075",
+                    "name": "Secondary Hover"
+                },
+                {
+                    "slug": "secondary-subtle",
+                    "color": "#FCE7F3",
+                    "name": "Secondary Subtle"
+                },
+                {
+                    "slug": "accent",
+                    "color": "#1FCDBC",
+                    "name": "Accent"
+                },
+                {
+                    "slug": "surface-alt",
+                    "color": "#FAFAFA",
+                    "name": "Surface Alt"
+                },
+                {
+                    "slug": "surface-dark",
+                    "color": "#1F2937",
+                    "name": "Surface Dark"
+                },
+                {
+                    "slug": "slate",
+                    "color": "#6B7280",
+                    "name": "Slate"
+                },
+                {
+                    "slug": "muted",
+                    "color": "#4B5563",
+                    "name": "Muted"
+                },
+                {
+                    "slug": "inverse",
+                    "color": "#FFFFFF",
+                    "name": "Inverse"
+                },
+                {
+                    "slug": "border",
+                    "color": "#E5E7EB",
+                    "name": "Border"
+                }
+            ]
+        },
+        "layout": {
+            "contentSize": "720px",
+            "wideSize": "1200px"
+        },
+        "spacing": {
+            "defaultSpacingSizes": false,
+            "spacingSizes": [
+                {
+                    "slug": "2xs",
+                    "size": "4px",
+                    "name": "2XS"
+                },
+                {
+                    "slug": "xs",
+                    "size": "8px",
+                    "name": "XS"
+                },
+                {
+                    "slug": "sm",
+                    "size": "12px",
+                    "name": "SM"
+                },
+                {
+                    "slug": "md",
+                    "size": "16px",
+                    "name": "MD"
+                },
+                {
+                    "slug": "lg",
+                    "size": "24px",
+                    "name": "LG"
+                },
+                {
+                    "slug": "xl",
+                    "size": "32px",
+                    "name": "XL"
+                },
+                {
+                    "slug": "2xl",
+                    "size": "48px",
+                    "name": "2XL"
+                },
+                {
+                    "slug": "3xl",
+                    "size": "64px",
+                    "name": "3XL"
+                },
+                {
+                    "slug": "4xl",
+                    "size": "96px",
+                    "name": "4XL"
+                }
+            ],
+            "units": [
+                "px",
+                "rem",
+                "%"
+            ]
+        },
+        "typography": {
+            "customFontSize": true,
+            "defaultFontSizes": false,
+            "fluid": true,
+            "fontFamilies": [
+                {
+                    "fontFamily": "\"Raleway\", ui-sans-serif, system-ui, sans-serif",
+                    "slug": "raleway",
+                    "name": "Raleway"
+                }
+            ],
+            "fontSizes": [
+                {
+                    "slug": "xs",
+                    "size": "0.75rem",
+                    "name": "XS"
+                },
+                {
+                    "slug": "sm",
+                    "size": "0.875rem",
+                    "name": "SM"
+                },
+                {
+                    "slug": "base",
+                    "size": "1rem",
+                    "name": "Base"
+                },
+                {
+                    "slug": "md",
+                    "size": "1.125rem",
+                    "name": "MD"
+                },
+                {
+                    "slug": "lg",
+                    "size": "1.25rem",
+                    "name": "LG"
+                },
+                {
+                    "slug": "xl",
+                    "size": "1.5rem",
+                    "name": "XL"
+                },
+                {
+                    "slug": "2xl",
+                    "size": "1.875rem",
+                    "name": "2XL"
+                },
+                {
+                    "slug": "3xl",
+                    "size": "2.25rem",
+                    "name": "3XL"
+                },
+                {
+                    "slug": "4xl",
+                    "size": "3rem",
+                    "name": "4XL"
+                },
+                {
+                    "slug": "5xl",
+                    "size": "3.75rem",
+                    "name": "5XL"
+                }
+            ]
+        },
+        "border": {
+            "radius": [
+                {
+                    "slug": "sm",
+                    "size": "4px",
+                    "name": "SM"
+                },
+                {
+                    "slug": "md",
+                    "size": "8px",
+                    "name": "MD"
+                },
+                {
+                    "slug": "lg",
+                    "size": "12px",
+                    "name": "LG"
+                },
+                {
+                    "slug": "full",
+                    "size": "9999px",
+                    "name": "Full"
+                }
+            ]
+        },
+        "custom": {
+            "motion": {
+                "enabled": true,
+                "phase": "css-only",
+                "duration": {
+                    "instant": "0ms",
+                    "fast": "150ms",
+                    "normal": "250ms",
+                    "slow": "400ms"
+                },
+                "delay": {
+                    "none": "0ms",
+                    "small": "100ms",
+                    "medium": "200ms",
+                    "large": "400ms"
+                },
+                "easing": {
+                    "entrance": "cubic-bezier(0, 0, 0.2, 1)",
+                    "hover": "cubic-bezier(0.4, 0, 0.2, 1)"
+                },
+                "distance": {
+                    "sm": "8px",
+                    "md": "16px"
+                }
+            }
+        },
+        "blocks": {
+            "core/button": {
+                "border": {
+                    "radius": "6px"
+                },
+                "variations": {
+                    "employer": {
+                        "title": "Employer",
+                        "slug": "employer"
+                    },
+                    "candidate": {
+                        "title": "Candidate",
+                        "slug": "candidate"
+                    },
+                    "on-dark": {
+                        "title": "On Dark",
+                        "slug": "on-dark"
+                    },
+                    "size-sm": {
+                        "title": "Small",
+                        "slug": "size-sm"
+                    },
+                    "size-md": {
+                        "title": "Medium",
+                        "slug": "size-md"
+                    },
+                    "size-lg": {
+                        "title": "Large",
+                        "slug": "size-lg"
+                    }
+                }
+            }
+        }
+    },
+    "styles": {
+        "color": {
+            "background": "var(--wp--preset--color--background)",
+            "text": "var(--wp--preset--color--foreground)"
+        },
+        "typography": {
+            "fontFamily": "var(--wp--preset--font-family--raleway)",
+            "fontSize": "var(--wp--preset--font-size--base)",
+            "lineHeight": "1.65"
+        },
+        "elements": {
+            "heading": {
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--raleway)",
+                    "fontWeight": "700",
+                    "lineHeight": "1.2"
+                },
+                "color": {
+                    "text": "var(--wp--preset--color--foreground)"
+                }
+            },
+            "link": {
+                "color": {
+                    "text": "var(--wp--preset--color--primary)"
+                }
+            },
+            "button": {
+                "typography": {
+                    "fontWeight": "600"
+                },
+                "border": {
+                    "radius": "6px"
+                },
+                "color": {
+                    "background": "var(--wp--preset--color--primary)",
+                    "text": "var(--wp--preset--color--inverse)"
+                }
+            }
+        },
+        "blocks": {
+            "core/button": {
+                "variations": {
+                    "employer": {
+                        "color": {
+                            "background": "var(--wp--preset--color--primary)",
+                            "text": "var(--wp--preset--color--inverse)"
+                        }
+                    },
+                    "candidate": {
+                        "color": {
+                            "background": "var(--wp--preset--color--secondary)",
+                            "text": "var(--wp--preset--color--inverse)"
+                        }
+                    },
+                    "on-dark": {
+                        "color": {
+                            "background": "var(--wp--preset--color--inverse)",
+                            "text": "var(--wp--preset--color--foreground)"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "templateParts": [
+        {
+            "name": "header",
+            "title": "Header",
+            "area": "header"
+        },
+        {
+            "name": "header-utility",
+            "title": "Header Utility",
+            "area": "header"
+        },
+        {
+            "name": "footer",
+            "title": "Footer",
+            "area": "footer"
+        },
+        {
+            "name": "footer-legal",
+            "title": "Footer Legal",
+            "area": "footer"
+        },
+        {
+            "name": "breadcrumbs",
+            "title": "Breadcrumbs",
+            "area": "uncategorized"
+        },
+        {
+            "name": "post-meta",
+            "title": "Post Meta",
+            "area": "uncategorized"
+        },
+        {
+            "name": "job-meta",
+            "title": "Job Meta",
+            "area": "uncategorized"
+        }
+    ],
+    "customTemplates": [
+        {
+            "name": "page-section-landing",
+            "title": "Section Landing",
+            "postTypes": [
+                "page"
+            ]
+        },
+        {
+            "name": "page-knowledge-hub",
+            "title": "Knowledge Hub",
+            "postTypes": [
+                "page"
+            ]
+        },
+        {
+            "name": "page-conversion",
+            "title": "Conversion",
+            "postTypes": [
+                "page"
+            ]
+        },
+        {
+            "name": "page-contact",
+            "title": "Contact",
+            "postTypes": [
+                "page"
+            ]
+        },
+        {
+            "name": "page-legal",
+            "title": "Legal",
+            "postTypes": [
+                "page"
+            ]
+        },
+        {
+            "name": "page-archive-articles",
+            "title": "Article Archive",
+            "postTypes": [
+                "page"
+            ]
+        },
+        {
+            "name": "page-archive-news",
+            "title": "News Archive",
+            "postTypes": [
+                "page"
+            ]
+        },
+        {
+            "name": "single-job",
+            "title": "Single Job",
+            "postTypes": [
+                "job"
+            ]
+        }
+    ]
+}

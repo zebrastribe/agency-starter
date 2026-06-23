@@ -1,0 +1,1172 @@
+# Copyright (C) 2026 Timework
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Agency Starter 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/theme\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-06-17T21:39:59+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: agency-starter\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Agency Starter"
+msgstr ""
+
+#. Theme URI of the theme
+#. Author URI of the theme
+#: style.css
+msgid "https://underscoretw.com/"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "Gutenberg-native B2B agency starter theme for staffing and professional services."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Timework"
+msgstr ""
+
+#: blocks/faq-section/render.php:16
+msgid "FAQs"
+msgstr ""
+
+#: blocks/hero-interactive/render.php:192
+msgid "Hero slides"
+msgstr ""
+
+#. translators: %d: slide number
+#: blocks/hero-interactive/render.php:199
+#, php-format
+msgid "Show slide %d"
+msgstr ""
+
+#: blocks/logo-cloud/render.php:16
+msgid "Global companies grow with us"
+msgstr ""
+
+#: blocks/usp-tabs/render.php:16
+msgid "How we do it"
+msgstr ""
+
+#: blocks/usp-tabs/render.php:17
+msgid "One platform. Every hiring need."
+msgstr ""
+
+#: inc/block-bindings.php:53
+msgid "Open position"
+msgstr ""
+
+#: inc/block-bindings.php:54
+msgid "Position closed"
+msgstr ""
+
+#: inc/block-bindings.php:68
+msgid "Job Company"
+msgstr ""
+
+#: inc/block-bindings.php:72
+msgid "Job Location"
+msgstr ""
+
+#: inc/block-bindings.php:76
+msgid "Job Status"
+msgstr ""
+
+#: inc/breadcrumbs.php:21
+#: inc/breadcrumbs.php:95
+msgid "Breadcrumbs"
+msgstr ""
+
+#: inc/breadcrumbs.php:33
+#: inc/navigation.php:53
+msgid "Home"
+msgstr ""
+
+#. translators: %s: search query
+#: inc/breadcrumbs.php:50
+#, php-format
+msgid "Search results for \"%s\""
+msgstr ""
+
+#: inc/breadcrumbs.php:62
+#: inc/patterns.php:585
+msgid "Page not found"
+msgstr ""
+
+#: inc/enqueue.php:156
+msgid "Skip to content"
+msgstr ""
+
+#: inc/faq-section.php:20
+msgid "Does this replace legal counsel?"
+msgstr ""
+
+#: inc/faq-section.php:21
+msgid "No. The platform reduces risk and manual work by embedding compliance into day-to-day operations, but it does not replace legal advice."
+msgstr ""
+
+#: inc/faq-section.php:24
+msgid "Can compliance really be centralized globally?"
+msgstr ""
+
+#: inc/faq-section.php:25
+msgid "Yes. Policies, worker data, and required actions are tracked in one platform so teams see the same source of truth across countries."
+msgstr ""
+
+#: inc/faq-section.php:28
+msgid "Where do compliance insights live?"
+msgstr ""
+
+#: inc/faq-section.php:29
+msgid "Insights appear in dashboards and worker profiles, with alerts when regulations or employment status changes require action."
+msgstr ""
+
+#: inc/faq-section.php:32
+msgid "How are complex or edge cases handled?"
+msgstr ""
+
+#: inc/faq-section.php:33
+msgid "Edge cases are flagged for review with context and documentation so legal and HR teams can resolve them without losing track."
+msgstr ""
+
+#: inc/faq-section.php:36
+msgid "How does the platform help prevent worker misclassification?"
+msgstr ""
+
+#: inc/faq-section.php:37
+msgid "Classification checks, contract templates, and audit trails help teams hire with the right worker type from the start."
+msgstr ""
+
+#: inc/hero-interactive.php:23
+msgid "Lorem Company"
+msgstr ""
+
+#: inc/hero-interactive.php:24
+msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+msgstr ""
+
+#: inc/hero-interactive.php:25
+msgid "— Lorem Name, Lorem Title"
+msgstr ""
+
+#: inc/hero-interactive.php:29
+msgid "Lorem Partner"
+msgstr ""
+
+#: inc/hero-interactive.php:30
+msgid "Lorem ipsum sed do eiusmod tempor incididunt ut labore."
+msgstr ""
+
+#: inc/hero-interactive.php:31
+msgid "— Lorem Person, Lorem Role"
+msgstr ""
+
+#: inc/hero-interactive.php:35
+msgid "Lorem Client"
+msgstr ""
+
+#: inc/hero-interactive.php:36
+msgid "Lorem ipsum ut enim ad minim veniam quis nostrud."
+msgstr ""
+
+#: inc/hero-interactive.php:37
+msgid "— Lorem Leader, Lorem Department"
+msgstr ""
+
+#: inc/heroicons.php:57
+msgid "Briefcase"
+msgstr ""
+
+#: inc/heroicons.php:58
+msgid "Currency dollar"
+msgstr ""
+
+#: inc/heroicons.php:59
+msgid "Banknotes"
+msgstr ""
+
+#: inc/heroicons.php:60
+msgid "User group"
+msgstr ""
+
+#: inc/heroicons.php:61
+msgid "Users"
+msgstr ""
+
+#: inc/heroicons.php:62
+msgid "Globe"
+msgstr ""
+
+#: inc/heroicons.php:63
+msgid "Building"
+msgstr ""
+
+#: inc/i18n-parts.php:47
+#: inc/navigation.php:54
+msgid "Employers"
+msgstr ""
+
+#: inc/i18n-parts.php:48
+#: inc/navigation.php:55
+msgid "Candidates"
+msgstr ""
+
+#: inc/i18n-parts.php:49
+#: inc/post-types.php:56
+msgid "Company"
+msgstr ""
+
+#: inc/i18n-parts.php:50
+#: inc/navigation.php:57
+msgid "Contact"
+msgstr ""
+
+#: inc/i18n-parts.php:52
+msgid "All rights reserved."
+msgstr ""
+
+#: inc/i18n-parts.php:55
+msgid "Privacy policy"
+msgstr ""
+
+#: inc/i18n-parts.php:56
+msgid "Terms of use"
+msgstr ""
+
+#: inc/i18n-parts.php:59
+msgid "Open menu"
+msgstr ""
+
+#: inc/language-switcher.php:95
+msgid "Danish"
+msgstr ""
+
+#: inc/language-switcher.php:96
+msgid "English"
+msgstr ""
+
+#. translators: %s: target language name
+#: inc/language-switcher.php:100
+#, php-format
+msgid "Switch language to %s"
+msgstr ""
+
+#: inc/logo-cloud.php:59
+msgid "Client logo"
+msgstr ""
+
+#: inc/media.php:57
+msgid "Article image placeholder"
+msgstr ""
+
+#: inc/navigation.php:26
+#: inc/navigation.php:60
+#: inc/setup.php:59
+msgid "Primary"
+msgstr ""
+
+#: inc/navigation.php:56
+#: inc/post-types.php:19
+#: inc/post-types.php:30
+msgid "Jobs"
+msgstr ""
+
+#: inc/navigation.php:98
+msgid "Mobile navigation"
+msgstr ""
+
+#: inc/navigation.php:99
+#: inc/navigation.php:102
+msgid "Close menu"
+msgstr ""
+
+#: inc/newsletter.php:20
+msgid "Newsletter signup"
+msgstr ""
+
+#: inc/newsletter.php:21
+msgid "Connect your newsletter provider (Mailchimp, CF7, etc.)."
+msgstr ""
+
+#: inc/patterns-more.php:23
+msgid "USP Tabs"
+msgstr ""
+
+#: inc/patterns-more.php:29
+#: inc/synced-patterns.php:21
+msgid "Trust Statement"
+msgstr ""
+
+#: inc/patterns-more.php:41
+msgid "Logo Cloud"
+msgstr ""
+
+#: inc/patterns-more.php:47
+msgid "Testimonial Entry"
+msgstr ""
+
+#: inc/patterns-more.php:57
+#: inc/synced-patterns.php:24
+msgid "Testimonial Excerpt"
+msgstr ""
+
+#: inc/patterns-more.php:69
+msgid "Testimonials Grid"
+msgstr ""
+
+#: inc/patterns-more.php:95
+msgid "Case List"
+msgstr ""
+
+#: inc/patterns-more.php:129
+msgid "Feature Grid"
+msgstr ""
+
+#: inc/patterns-more.php:173
+msgid "Industry Grid"
+msgstr ""
+
+#: inc/patterns-more.php:217
+msgid "Process Steps"
+msgstr ""
+
+#: inc/patterns-more.php:273
+msgid "Timeline"
+msgstr ""
+
+#: inc/patterns-more.php:311
+msgid "Pricing Guidance"
+msgstr ""
+
+#: inc/patterns-more.php:333
+msgid "Knowledge Article Layout"
+msgstr ""
+
+#: inc/patterns-more.php:355
+msgid "Resource Grid"
+msgstr ""
+
+#: inc/patterns-more.php:411
+msgid "Downloads List"
+msgstr ""
+
+#: inc/patterns-more.php:435
+msgid "Related Content"
+msgstr ""
+
+#: inc/patterns-more.php:467
+msgid "Blog Preview"
+msgstr ""
+
+#: inc/patterns-more.php:491
+msgid "News Preview"
+msgstr ""
+
+#: inc/patterns-more.php:515
+msgid "CTA Inline"
+msgstr ""
+
+#: inc/patterns-more.php:533
+#: inc/synced-patterns.php:23
+msgid "Newsletter Signup"
+msgstr ""
+
+#: inc/patterns-more.php:557
+msgid "Location Card"
+msgstr ""
+
+#: inc/patterns-more.php:579
+msgid "Anchor Nav"
+msgstr ""
+
+#: inc/patterns.php:20
+msgid "Corporate Hero"
+msgstr ""
+
+#: inc/patterns.php:23
+msgid "Corporate CTA"
+msgstr ""
+
+#: inc/patterns.php:26
+msgid "Corporate Trust"
+msgstr ""
+
+#: inc/patterns.php:29
+msgid "Corporate Services"
+msgstr ""
+
+#: inc/patterns.php:32
+msgid "Corporate Content"
+msgstr ""
+
+#: inc/patterns.php:35
+msgid "Corporate Archive"
+msgstr ""
+
+#: inc/patterns.php:38
+msgid "Corporate Team"
+msgstr ""
+
+#: inc/patterns.php:41
+msgid "Corporate Navigation"
+msgstr ""
+
+#: inc/patterns.php:61
+msgid "Hero Homepage"
+msgstr ""
+
+#: inc/patterns.php:91
+msgid "Hero Section"
+msgstr ""
+
+#: inc/patterns.php:117
+msgid "Hero Minimal"
+msgstr ""
+
+#: inc/patterns.php:133
+msgid "Hero Service"
+msgstr ""
+
+#: inc/patterns.php:159
+#: inc/synced-patterns.php:20
+msgid "Statistics Row"
+msgstr ""
+
+#: inc/patterns.php:199
+#: inc/synced-patterns.php:19
+msgid "Contact CTA Band"
+msgstr ""
+
+#: inc/patterns.php:227
+msgid "Audience Split"
+msgstr ""
+
+#: inc/patterns.php:273
+msgid "Section Sub Navigation"
+msgstr ""
+
+#: inc/patterns.php:293
+msgid "Service Grid"
+msgstr ""
+
+#: inc/patterns.php:349
+msgid "Job Card"
+msgstr ""
+
+#: inc/patterns.php:371
+msgid "Post Card"
+msgstr ""
+
+#: inc/patterns.php:387
+msgid "Job Apply CTA"
+msgstr ""
+
+#: inc/patterns.php:415
+msgid "Contact Details"
+msgstr ""
+
+#: inc/patterns.php:453
+#: inc/synced-patterns.php:22
+msgid "Team Contact Cards"
+msgstr ""
+
+#: inc/patterns.php:459
+msgid "Conversion Form Layout"
+msgstr ""
+
+#: inc/patterns.php:483
+msgid "Contact Form Section"
+msgstr ""
+
+#: inc/patterns.php:507
+msgid "CTA Banner"
+msgstr ""
+
+#: inc/patterns.php:529
+msgid "FAQ Section"
+msgstr ""
+
+#: inc/patterns.php:565
+msgid "Knowledge Hub Layout"
+msgstr ""
+
+#: inc/patterns.php:571
+msgid "404 Content"
+msgstr ""
+
+#: inc/patterns.php:586
+msgid "Lorem ipsum dolor sit amet. The page you requested could not be found."
+msgstr ""
+
+#: inc/patterns.php:587
+#: inc/patterns.php:589
+msgid "Search"
+msgstr ""
+
+#: inc/patterns.php:588
+msgid "Search…"
+msgstr ""
+
+#: inc/post-types.php:20
+msgid "Job"
+msgstr ""
+
+#: inc/post-types.php:21
+msgid "Add New"
+msgstr ""
+
+#: inc/post-types.php:22
+msgid "Add New Job"
+msgstr ""
+
+#: inc/post-types.php:23
+msgid "Edit Job"
+msgstr ""
+
+#: inc/post-types.php:24
+msgid "New Job"
+msgstr ""
+
+#: inc/post-types.php:25
+msgid "View Job"
+msgstr ""
+
+#: inc/post-types.php:26
+msgid "Search Jobs"
+msgstr ""
+
+#: inc/post-types.php:27
+msgid "No jobs found"
+msgstr ""
+
+#: inc/post-types.php:28
+msgid "No jobs found in Trash"
+msgstr ""
+
+#: inc/post-types.php:29
+msgid "All Jobs"
+msgstr ""
+
+#: inc/post-types.php:57
+msgid "Location"
+msgstr ""
+
+#: inc/post-types.php:58
+msgid "Status"
+msgstr ""
+
+#: inc/setup.php:60
+msgid "Footer Column A"
+msgstr ""
+
+#: inc/setup.php:61
+msgid "Footer Column B"
+msgstr ""
+
+#: inc/setup.php:62
+msgid "Footer Company"
+msgstr ""
+
+#: inc/setup.php:63
+msgid "Legal"
+msgstr ""
+
+#: inc/usp-tabs.php:24
+msgid "Employer services"
+msgstr ""
+
+#: inc/usp-tabs.php:25
+msgid "Need to hire anyone, anywhere? We handle contracts, compliance, and onboarding — in days, not months."
+msgstr ""
+
+#: inc/usp-tabs.php:26
+#: inc/usp-tabs.php:34
+#: inc/usp-tabs.php:42
+#: inc/usp-tabs.php:50
+msgid "Learn more"
+msgstr ""
+
+#: inc/usp-tabs.php:32
+msgid "Global payroll"
+msgstr ""
+
+#: inc/usp-tabs.php:33
+msgid "Accurate, compliant payroll in every market you operate. Run by in-house specialists, not a partner network."
+msgstr ""
+
+#: inc/usp-tabs.php:40
+msgid "Contractor management"
+msgstr ""
+
+#: inc/usp-tabs.php:41
+msgid "Engage international contractors compliantly. Contracts, payments, and risk — handled end to end."
+msgstr ""
+
+#: inc/usp-tabs.php:48
+msgid "Candidate matching"
+msgstr ""
+
+#: inc/usp-tabs.php:49
+msgid "Source, screen, and place talent faster with a dedicated consultant and a curated shortlist."
+msgstr ""
+
+#: blocks/content-block/block.json
+msgctxt "block title"
+msgid "Content Block"
+msgstr ""
+
+#: blocks/content-block/block.json
+msgctxt "block description"
+msgid "Two-column editorial breaker or in-page section with theme color, image, and column layout options."
+msgstr ""
+
+#: blocks/content-block/block.json
+msgctxt "block keyword"
+msgid "content"
+msgstr ""
+
+#: blocks/content-block/block.json
+msgctxt "block keyword"
+msgid "split"
+msgstr ""
+
+#: blocks/content-block/block.json
+msgctxt "block keyword"
+msgid "feature"
+msgstr ""
+
+#: blocks/content-block/block.json
+msgctxt "block keyword"
+msgid "image"
+msgstr ""
+
+#: blocks/content-block/block.json
+#: blocks/cta-glow/block.json
+msgctxt "block keyword"
+msgid "breaker"
+msgstr ""
+
+#: blocks/content-block/block.json
+msgctxt "block keyword"
+msgid "band"
+msgstr ""
+
+#: blocks/cta-glow/block.json
+msgctxt "block title"
+msgid "CTA Glow Card"
+msgstr ""
+
+#: blocks/cta-glow/block.json
+msgctxt "block description"
+msgid "Centered conversion card with a soft accent gradient glow and optional subtle animation."
+msgstr ""
+
+#: blocks/cta-glow/block.json
+msgctxt "block keyword"
+msgid "cta"
+msgstr ""
+
+#: blocks/cta-glow/block.json
+msgctxt "block keyword"
+msgid "conversion"
+msgstr ""
+
+#: blocks/cta-glow/block.json
+msgctxt "block keyword"
+msgid "banner"
+msgstr ""
+
+#: blocks/cta-glow/block.json
+msgctxt "block keyword"
+msgid "glow"
+msgstr ""
+
+#: blocks/faq-section/block.json
+msgctxt "block title"
+msgid "FAQ Section"
+msgstr ""
+
+#: blocks/faq-section/block.json
+msgctxt "block description"
+msgid "Two-column FAQs with an accordion list and schema-friendly markup."
+msgstr ""
+
+#: blocks/faq-section/block.json
+msgctxt "block keyword"
+msgid "faq"
+msgstr ""
+
+#: blocks/faq-section/block.json
+#: blocks/usp-tabs/block.json
+msgctxt "block keyword"
+msgid "accordion"
+msgstr ""
+
+#: blocks/faq-section/block.json
+msgctxt "block keyword"
+msgid "questions"
+msgstr ""
+
+#: blocks/faq-section/block.json
+msgctxt "block keyword"
+msgid "answers"
+msgstr ""
+
+#: blocks/hero-interactive/block.json
+msgctxt "block title"
+msgid "Interactive Hero"
+msgstr ""
+
+#: blocks/hero-interactive/block.json
+msgctxt "block description"
+msgid "Split hero: colored content column left, media slider right."
+msgstr ""
+
+#: blocks/hero-interactive/block.json
+msgctxt "block keyword"
+msgid "hero"
+msgstr ""
+
+#: blocks/hero-interactive/block.json
+msgctxt "block keyword"
+msgid "slider"
+msgstr ""
+
+#: blocks/hero-interactive/block.json
+msgctxt "block keyword"
+msgid "interactive"
+msgstr ""
+
+#: blocks/logo-cloud/block.json
+msgctxt "block title"
+msgid "Logo Cloud"
+msgstr ""
+
+#: blocks/logo-cloud/block.json
+msgctxt "block description"
+msgid "Full-width logo trust band with optional marquee animation."
+msgstr ""
+
+#: blocks/logo-cloud/block.json
+msgctxt "block keyword"
+msgid "logos"
+msgstr ""
+
+#: blocks/logo-cloud/block.json
+msgctxt "block keyword"
+msgid "clients"
+msgstr ""
+
+#: blocks/logo-cloud/block.json
+msgctxt "block keyword"
+msgid "trust"
+msgstr ""
+
+#: blocks/logo-cloud/block.json
+msgctxt "block keyword"
+msgid "marquee"
+msgstr ""
+
+#: blocks/usp-tabs/block.json
+msgctxt "block title"
+msgid "USP Tabs"
+msgstr ""
+
+#: blocks/usp-tabs/block.json
+msgctxt "block description"
+msgid "Vertical accordion USP section with optional intro text and swappable preview panel."
+msgstr ""
+
+#: blocks/usp-tabs/block.json
+msgctxt "block keyword"
+msgid "tabs"
+msgstr ""
+
+#: blocks/usp-tabs/block.json
+msgctxt "block keyword"
+msgid "usp"
+msgstr ""
+
+#: blocks/usp-tabs/block.json
+msgctxt "block keyword"
+msgid "services"
+msgstr ""
+
+#: theme.json
+#: styles/aqua.json
+#: styles/dark.json
+#: styles/ember.json
+#: styles/light.json
+#: styles/pearl.json
+msgctxt "Color name"
+msgid "Background"
+msgstr ""
+
+#: theme.json
+#: styles/aqua.json
+#: styles/dark.json
+#: styles/ember.json
+#: styles/light.json
+#: styles/pearl.json
+msgctxt "Color name"
+msgid "Surface"
+msgstr ""
+
+#: theme.json
+#: styles/aqua.json
+#: styles/dark.json
+#: styles/ember.json
+#: styles/light.json
+#: styles/pearl.json
+msgctxt "Color name"
+msgid "Foreground"
+msgstr ""
+
+#: theme.json
+#: styles/aqua.json
+#: styles/dark.json
+#: styles/ember.json
+#: styles/light.json
+#: styles/pearl.json
+msgctxt "Color name"
+msgid "Ink"
+msgstr ""
+
+#: theme.json
+#: styles/aqua.json
+#: styles/dark.json
+#: styles/ember.json
+#: styles/light.json
+#: styles/pearl.json
+msgctxt "Color name"
+msgid "Primary"
+msgstr ""
+
+#: theme.json
+#: styles/aqua.json
+#: styles/dark.json
+#: styles/ember.json
+#: styles/light.json
+#: styles/pearl.json
+msgctxt "Color name"
+msgid "Primary Hover"
+msgstr ""
+
+#: theme.json
+#: styles/aqua.json
+#: styles/dark.json
+#: styles/ember.json
+#: styles/light.json
+#: styles/pearl.json
+msgctxt "Color name"
+msgid "Primary Subtle"
+msgstr ""
+
+#: theme.json
+#: styles/aqua.json
+#: styles/dark.json
+#: styles/ember.json
+#: styles/light.json
+#: styles/pearl.json
+msgctxt "Color name"
+msgid "Secondary"
+msgstr ""
+
+#: theme.json
+#: styles/aqua.json
+#: styles/dark.json
+#: styles/ember.json
+#: styles/light.json
+#: styles/pearl.json
+msgctxt "Color name"
+msgid "Secondary Hover"
+msgstr ""
+
+#: theme.json
+#: styles/aqua.json
+#: styles/dark.json
+#: styles/ember.json
+#: styles/light.json
+#: styles/pearl.json
+msgctxt "Color name"
+msgid "Secondary Subtle"
+msgstr ""
+
+#: theme.json
+#: styles/aqua.json
+#: styles/dark.json
+#: styles/ember.json
+#: styles/light.json
+#: styles/pearl.json
+msgctxt "Color name"
+msgid "Accent"
+msgstr ""
+
+#: theme.json
+#: styles/aqua.json
+#: styles/dark.json
+#: styles/ember.json
+#: styles/light.json
+#: styles/pearl.json
+msgctxt "Color name"
+msgid "Surface Alt"
+msgstr ""
+
+#: theme.json
+#: styles/aqua.json
+#: styles/dark.json
+#: styles/ember.json
+#: styles/light.json
+#: styles/pearl.json
+msgctxt "Color name"
+msgid "Surface Dark"
+msgstr ""
+
+#: theme.json
+#: styles/aqua.json
+#: styles/dark.json
+#: styles/ember.json
+#: styles/light.json
+#: styles/pearl.json
+msgctxt "Color name"
+msgid "Slate"
+msgstr ""
+
+#: theme.json
+#: styles/aqua.json
+#: styles/dark.json
+#: styles/ember.json
+#: styles/light.json
+#: styles/pearl.json
+msgctxt "Color name"
+msgid "Muted"
+msgstr ""
+
+#: theme.json
+#: styles/aqua.json
+#: styles/dark.json
+#: styles/ember.json
+#: styles/light.json
+#: styles/pearl.json
+msgctxt "Color name"
+msgid "Inverse"
+msgstr ""
+
+#: theme.json
+#: styles/aqua.json
+#: styles/dark.json
+#: styles/ember.json
+#: styles/light.json
+#: styles/pearl.json
+msgctxt "Color name"
+msgid "Border"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "2XS"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "XS"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "SM"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "MD"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "LG"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "XL"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "2XL"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "3XL"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "4XL"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Raleway"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "XS"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "SM"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Base"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "MD"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "LG"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "XL"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "2XL"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "3XL"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "4XL"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "5XL"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header Utility"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer Legal"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Breadcrumbs"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Post Meta"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Job Meta"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Section Landing"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Knowledge Hub"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Conversion"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Contact"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Legal"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Article Archive"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "News Archive"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Single Job"
+msgstr ""
+
+#: styles/aqua.json
+msgctxt "Style variation name"
+msgid "Aqua"
+msgstr ""
+
+#: styles/dark.json
+msgctxt "Style variation name"
+msgid "Dark"
+msgstr ""
+
+#: styles/ember.json
+msgctxt "Style variation name"
+msgid "Ember"
+msgstr ""
+
+#: styles/light.json
+msgctxt "Style variation name"
+msgid "Light"
+msgstr ""
+
+#: styles/pearl.json
+msgctxt "Style variation name"
+msgid "Pearl"
+msgstr ""

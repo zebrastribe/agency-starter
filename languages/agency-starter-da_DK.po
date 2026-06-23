@@ -1,0 +1,279 @@
+# Danish translations for TimeWork client demo.
+msgid ""
+msgstr ""
+"Project-Id-Version: Agency Starter 0.1.0\n"
+"Language: da_DK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Close menu"
+msgstr "Luk menu"
+
+msgid "Close"
+msgstr "Luk"
+
+msgid "Hero slides"
+msgstr "Hero-billeder"
+
+msgid "Lorem view all articles"
+msgstr "Se alle artikler"
+
+msgid "Lorem view all news"
+msgstr "Se alle nyheder"
+
+msgid "Lorem view all jobs"
+msgstr "Se alle job"
+
+msgid "Book a demo"
+msgstr "Book en demo"
+
+msgid "%s submenu"
+msgstr "%s undermenu"
+
+msgid "Open %s submenu"
+msgstr "Åbn %s undermenu"
+
+msgid "Open menu"
+msgstr "Åbn menu"
+
+msgid "Mobile navigation"
+msgstr "Mobil navigation"
+
+msgid "Skip to content"
+msgstr "Spring til indhold"
+
+msgid "Expand %s"
+msgstr "Udvid %s"
+
+msgid "Primary"
+msgstr "Primær"
+
+msgid "Employers"
+msgstr "Virksomheder"
+
+msgid "Candidates"
+msgstr "Kandidater"
+
+msgid "Company"
+msgstr "Virksomheden"
+
+msgid "Contact"
+msgstr "Kontakt"
+
+msgid "Home"
+msgstr "Forside"
+
+msgid "Jobs"
+msgstr "Job"
+
+msgid "Articles"
+msgstr "Artikler"
+
+msgid "News"
+msgstr "Nyheder"
+
+msgid "Privacy policy"
+msgstr "Privatlivspolitik"
+
+msgid "Privacy Policy"
+msgstr "Privatlivspolitik"
+
+msgid "Terms of use"
+msgstr "Vilkår for brug"
+
+msgid "Terms of Use"
+msgstr "Vilkår for brug"
+
+msgid "Recruitment solutions"
+msgstr "Rekrutteringsløsninger"
+
+msgid "Permanent recruitment"
+msgstr "Fastansættelser"
+
+msgid "Interim & consulting"
+msgstr "Interim & consulting"
+
+msgid "Find IT jobs"
+msgstr "Find IT-job"
+
+msgid "Open positions"
+msgstr "Ledige stillinger"
+
+msgid "Career guidance"
+msgstr "Karriererådgivning"
+
+msgid "About TimeWork"
+msgstr "Om TimeWork"
+
+msgid "All rights reserved."
+msgstr "Alle rettigheder forbeholdes."
+
+msgid "© %1$s Time Work. %2$s"
+msgstr "© %1$s Time Work. %2$s"
+
+msgid "Time Work"
+msgstr "Time Work"
+
+msgid "IT industry career partner"
+msgstr "IT-branchens karrierepartner"
+
+msgid "Companies that trust TimeWork"
+msgstr "Virksomheder der stoler på TimeWork"
+
+msgid "IT recruitment specialists"
+msgstr "Specialister i IT-rekruttering"
+
+msgid "Your partner for IT recruitment in Denmark"
+msgstr "Din partner inden for IT-rekruttering i Danmark"
+
+msgid "TimeWork connects ambitious IT professionals with companies that need the right skills — personally, quickly and with deep industry insight."
+msgstr "TimeWork forbinder ambitiøse IT-professionelle med virksomheder, der har brug for de rette kompetencer — personligt, hurtigt og med dyb brancheindsigt."
+
+msgid "For employers"
+msgstr "For virksomheder"
+
+msgid "For candidates"
+msgstr "For kandidater"
+
+msgid "How can we help you?"
+msgstr "Hvordan kan vi hjælpe dig?"
+
+msgid "Find IT specialists who match your team, culture and ambitions — from developers to leadership roles."
+msgstr "Find IT-specialister der matcher jeres team, kultur og ambitioner — fra udviklere til ledelsesroller."
+
+msgid "Explore employer services"
+msgstr "Se virksomhedsløsninger"
+
+msgid "Take the next step in your IT career with a partner who knows the market and advocates for you."
+msgstr "Tag næste skridt i din IT-karriere med en partner, der kender markedet og går i brechen for dig."
+
+msgid "Explore candidate services"
+msgstr "Se kandidatløsninger"
+
+msgid "Trusted by leading IT companies across Denmark for more than 20 years."
+msgstr "I mere end 20 år har førende IT-virksomheder i Danmark betroet os deres rekruttering."
+
+msgid "TimeWork understood our technical needs and delivered candidates who were genuinely ready to contribute from day one."
+msgstr "TimeWork forstod vores tekniske behov og leverede kandidater, der var klar til at bidrage fra dag ét."
+
+msgid "IT Director, Danish technology company"
+msgstr "IT-direktør, dansk teknologivirksomhed"
+
+msgid "Stay updated on the IT job market"
+msgstr "Hold dig opdateret på IT-jobmarkedet"
+
+msgid "Insights for employers and candidates — news, trends and career tips from TimeWork."
+msgstr "Indsigt til virksomheder og kandidater — nyheder, trends og karrieretips fra TimeWork."
+
+msgid "We respect your privacy. Read our %s."
+msgstr "Vi respekterer dit privatliv. Læs vores %s."
+
+msgid "privacy policy"
+msgstr "privatlivspolitik"
+
+msgid "Latest articles"
+msgstr "Seneste artikler"
+
+msgid "View all articles"
+msgstr "Se alle artikler"
+
+msgid "Latest news"
+msgstr "Seneste nyheder"
+
+msgid "View all news"
+msgstr "Se alle nyheder"
+
+msgid "Ready to talk about your next hire or career move?"
+msgstr "Klar til at tale om jeres næste ansættelse eller karrieretrin?"
+
+msgid "Our consultants are here to help."
+msgstr "Vores konsulenter står klar til at hjælpe."
+
+msgid "Contact us"
+msgstr "Kontakt os"
+
+msgid "Years in IT recruitment"
+msgstr "År med IT-rekruttering"
+
+msgid "Successful placements"
+msgstr "Succesfulde formidlinger"
+
+msgid "Client satisfaction"
+msgstr "Kundetilfredshed"
+
+msgid "IT recruitment"
+msgstr "IT-rekruttering"
+
+msgid "We help Danish companies find IT specialists who fit technically, culturally and commercially."
+msgstr "Vi hjælper danske virksomheder med at finde IT-specialister der passer teknisk, kulturelt og kommercielt."
+
+msgid "Executive search"
+msgstr "Executive search"
+
+msgid "Leadership and specialist roles where the right match makes a real difference to your organisation."
+msgstr "Ledelses- og specialistroller hvor det rette match gør en reel forskel for organisationen."
+
+msgid "Experienced IT professionals for projects, transformations and temporary capacity when you need it."
+msgstr "Erfarne IT-professionelle til projekter, transformationer og midlertidig kapacitet når I har brug for det."
+
+msgid "Personal sparring for IT candidates who want the right next step — not just the next job."
+msgstr "Personlig sparring til IT-kandidater der vil have det rigtige næste skridt — ikke bare det næste job."
+
+msgid "Learn more"
+msgstr "Læs mere"
+
+msgid "Connect your newsletter provider (Mailchimp, CF7, etc.)."
+msgstr "Tilslut jeres nyhedsbrevsudbyder (Mailchimp, CF7 osv.)."
+
+msgid "Newsletter signup"
+msgstr "Tilmelding til nyhedsbrev"
+
+msgid "TimeWork respects your privacy. A full privacy policy will be published before launch."
+msgstr "TimeWork respekterer dit privatliv. En fuld privatlivspolitik offentliggøres inden launch."
+
+msgid "These terms of use will be finalised before launch. Contact TimeWork if you have questions in the meantime."
+msgstr "Disse vilkår for brug færdiggøres inden launch. Kontakt TimeWork hvis du har spørgsmål i mellemtiden."
+
+msgid "Senior .NET Developer"
+msgstr "Senior .NET-udvikler"
+
+msgid "IT Project Manager"
+msgstr "IT-projektleder"
+
+msgid "UX Designer"
+msgstr "UX-designer"
+
+msgid "DevOps Engineer"
+msgstr "DevOps-ingeniør"
+
+msgid "Business Analyst"
+msgstr "Forretningsanalytiker"
+
+msgid "Data Analyst"
+msgstr "Dataanalytiker"
+
+msgid "Scrum Master"
+msgstr "Scrum Master"
+
+msgid "Open"
+msgstr "Åben"
+
+msgid "Closed"
+msgstr "Lukket"
+
+msgid "Copenhagen"
+msgstr "København"
+
+msgid "Aarhus"
+msgstr "Aarhus"
+
+msgid "Odense"
+msgstr "Odense"
+
+msgid "Remote"
+msgstr "Remote"
+
+msgid "Hybrid"
+msgstr "Hybrid"

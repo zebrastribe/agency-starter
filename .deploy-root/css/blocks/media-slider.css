@@ -1,0 +1,294 @@
+/**
+ * Media Slider — full-width testimonial / showcase carousel.
+ */
+
+.agency-media-slider.agency-section {
+	padding-block: clamp(3rem, 7vw, 5.5rem);
+	overflow-x: clip;
+}
+
+.agency-media-slider__header-wrap {
+	margin-bottom: clamp(2rem, 4vw, 3rem);
+}
+
+.agency-media-slider__header {
+	display: grid;
+	gap: var(--wp--preset--spacing--lg, 24px);
+}
+
+@media (min-width: 64em) {
+	.agency-media-slider__header {
+		grid-template-columns: minmax(0, 1fr) minmax(0, 22rem);
+		align-items: start;
+		gap: clamp(2rem, 5vw, 4rem);
+	}
+}
+
+.agency-media-slider__eyebrow {
+	margin-bottom: var(--wp--preset--spacing--sm, 12px);
+}
+
+.agency-media-slider__title {
+	margin: 0;
+	font-size: clamp(1.75rem, 3vw, 2.5rem);
+	font-weight: 700;
+	line-height: 1.15;
+	color: var(--wp--preset--color--foreground, #1f2937);
+	text-align: left;
+}
+
+.agency-media-slider__intro {
+	margin: 0;
+	max-width: none;
+	color: var(--wp--preset--color--muted, #6b7280);
+}
+
+@media (min-width: 64em) {
+	.agency-media-slider__intro {
+		justify-self: end;
+		text-align: left;
+	}
+}
+
+/* Full-bleed stage */
+.agency-media-slider__stage {
+	position: relative;
+}
+
+.agency-media-slider__viewport {
+	overflow: hidden;
+	width: 100%;
+	cursor: grab;
+	touch-action: pan-y;
+	padding-block-end: clamp(1rem, 2vw, 1.5rem);
+}
+
+.agency-media-slider__viewport.is-dragging {
+	cursor: grabbing;
+	touch-action: none;
+}
+
+.agency-media-slider__track {
+	display: flex;
+	gap: clamp(1rem, 2vw, 1.5rem);
+	align-items: stretch;
+	will-change: transform;
+	padding-inline: max(1rem, calc(50% - min(34rem, 42vw)));
+}
+
+.agency-media-slider__track.is-animating {
+	transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.agency-media-slider__track.is-animating {
+		transition: none;
+	}
+}
+
+.agency-media-slider__track.is-dragging {
+	transition: none;
+	user-select: none;
+}
+
+.agency-media-slider__track.is-dragging img {
+	pointer-events: none;
+}
+
+.agency-media-slider__slide {
+	flex: 0 0 min(34rem, 84vw);
+	opacity: 0.35;
+	filter: blur(3px);
+	transform: scale(0.94);
+	transition:
+		opacity 0.45s ease,
+		filter 0.45s ease,
+		transform 0.45s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.agency-media-slider__slide {
+		transition: none;
+	}
+}
+
+@media (max-width: 48em) {
+	.agency-media-slider__slide:not(.is-active) {
+		filter: none;
+		opacity: 0.55;
+		transform: scale(0.97);
+	}
+}
+
+.agency-media-slider__slide.is-active {
+	opacity: 1;
+	filter: none;
+	transform: scale(1);
+}
+
+.agency-media-slider__card {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	border-radius: 1rem;
+	background: var(--wp--preset--color--background, #fff);
+	box-shadow:
+		0 1px 2px rgba(15, 23, 42, 0.06),
+		0 12px 40px rgba(15, 23, 42, 0.08);
+	overflow: hidden;
+}
+
+.agency-media-slider__media {
+	position: relative;
+	aspect-ratio: 16 / 10;
+	background: var(--wp--preset--color--surface-alt, #f3f4f6);
+	overflow: hidden;
+}
+
+.agency-media-slider__image,
+.agency-media-slider__media img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	-webkit-user-drag: none;
+	user-select: none;
+}
+
+.agency-media-slider__play {
+	position: absolute;
+	left: 1rem;
+	bottom: 1rem;
+	z-index: 2;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 9999px;
+	background: rgba(255, 255, 255, 0.95);
+	color: var(--wp--preset--color--foreground, #111827);
+	text-decoration: none;
+	box-shadow: 0 8px 24px rgba(15, 23, 42, 0.18);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.agency-media-slider__play:hover {
+	transform: scale(1.05);
+	box-shadow: 0 12px 28px rgba(15, 23, 42, 0.22);
+}
+
+.agency-media-slider__play-icon {
+	display: block;
+	width: 0;
+	height: 0;
+	margin-left: 0.15rem;
+	border-top: 0.45rem solid transparent;
+	border-bottom: 0.45rem solid transparent;
+	border-left: 0.7rem solid currentColor;
+}
+
+.agency-media-slider__body {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	gap: var(--wp--preset--spacing--md, 16px);
+	padding: clamp(1.25rem, 2.5vw, 1.75rem);
+}
+
+.agency-media-slider__slide-title {
+	margin: 0;
+	font-size: clamp(1.125rem, 1.5vw, 1.375rem);
+	font-weight: 700;
+	line-height: 1.3;
+	color: var(--wp--preset--color--foreground, #1f2937);
+}
+
+.agency-media-slider__slide-text {
+	margin: 0;
+	flex: 1;
+	font-size: clamp(0.9375rem, 1.2vw, 1.0625rem);
+	line-height: 1.6;
+	color: var(--wp--preset--color--muted, #6b7280);
+}
+
+.agency-media-slider__cta {
+	align-self: flex-start;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin-top: auto;
+	padding: 0.625rem 1rem;
+	border-radius: 9999px;
+	border: 1px solid var(--wp--preset--color--border, #e5e7eb);
+	background: transparent;
+	color: var(--wp--preset--color--foreground, #1f2937);
+	font-size: 0.875rem;
+	font-weight: 600;
+	text-decoration: none;
+	transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.agency-media-slider__cta:hover {
+	background: var(--wp--preset--color--surface-alt, #f9fafb);
+	border-color: var(--wp--preset--color--foreground, #1f2937);
+	color: var(--wp--preset--color--foreground, #1f2937);
+}
+
+.agency-media-slider__nav {
+	display: flex;
+	justify-content: center;
+	margin-top: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.agency-media-slider__dots {
+	display: flex;
+	align-items: center;
+	gap: 0.625rem;
+}
+
+.agency-media-slider__dot {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 2.75rem;
+	height: 2.75rem;
+	padding: 0;
+	border: 0;
+	border-radius: 9999px;
+	background: transparent;
+	cursor: pointer;
+}
+
+.agency-media-slider__dot::after {
+	content: '';
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 9999px;
+	background: var(--wp--preset--color--border, #d1d5db);
+	transition:
+		background-color 0.2s ease,
+		transform 0.2s ease,
+		box-shadow 0.2s ease;
+}
+
+.agency-media-slider__dot.is-active::after {
+	background: var(--wp--preset--color--primary, #570df8);
+	transform: scale(1.15);
+	box-shadow:
+		0 0 0 2px var(--wp--preset--color--background, #fff),
+		0 0 0 3px var(--wp--preset--color--primary, #570df8);
+}
+
+/* Editor preview */
+.agency-media-slider-editor .agency-media-slider__media-placeholder {
+	display: grid;
+	place-items: center;
+	min-height: 12rem;
+	padding: 1rem;
+	text-align: center;
+	font-size: 0.875rem;
+	color: #6b7280;
+	background: #f3f4f6;
+}

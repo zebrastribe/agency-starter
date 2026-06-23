@@ -1,0 +1,37 @@
+<!-- wp:template-part {"slug":"header","area":"header","tagName":"div","className":"site-header-shell"} /-->
+
+<!-- wp:group {"tagName":"main","anchor":"content","className":"agency-main","layout":{"type":"default"}} -->
+<main id="content" class="wp-block-group agency-main">
+	<!-- wp:group {"align":"full","className":"agency-section agency-section--compact","layout":{"type":"default"}} -->
+	<div class="wp-block-group alignfull agency-section agency-section--compact">
+		<!-- wp:group {"className":"agency-container","layout":{"type":"default"}} -->
+		<div class="wp-block-group agency-container">
+			<!-- wp:template-part {"slug":"breadcrumbs","area":"uncategorized"} /-->
+			<!-- wp:post-title {"level":1,"className":"agency-hero__title"} /-->
+		</div>
+		<!-- /wp:group -->
+	</div>
+	<!-- /wp:group -->
+	<!-- wp:group {"align":"full","className":"agency-section agency-section--alt","layout":{"type":"default"}} -->
+	<div class="wp-block-group alignfull agency-section agency-section--alt">
+		<!-- wp:group {"className":"agency-container","layout":{"type":"default"}} -->
+		<div class="wp-block-group agency-container">
+			<!-- wp:query {"queryId":4,"query":{"perPage":12,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","namespace":"agency-starter/news"},"layout":{"type":"default"}} -->
+			<div class="wp-block-query">
+				<!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+					<!-- wp:pattern {"slug":"agency-starter/post-card"} /-->
+				<!-- /wp:post-template -->
+				<!-- wp:query-no-results -->
+					<!-- wp:pattern {"slug":"agency-starter/query-empty-news"} /-->
+				<!-- /wp:query-no-results -->
+				<!-- wp:query-pagination /-->
+			</div>
+			<!-- /wp:query -->
+		</div>
+		<!-- /wp:group -->
+	</div>
+	<!-- /wp:group -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","area":"footer","tagName":"footer"} /-->

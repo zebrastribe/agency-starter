@@ -1,0 +1,39 @@
+/**
+ * RTL layout overrides — mirrors shell navigation and drawers.
+ */
+.site-header__actions {
+	margin-left: unset;
+	margin-inline-start: auto;
+}
+
+.mobile-nav-panel__drawer {
+	right: auto;
+	left: 0;
+	transform: translateX(-100%);
+}
+
+.mobile-nav-panel.is-open .mobile-nav-panel__drawer {
+	transform: translateX(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.mobile-nav-panel__drawer {
+		transform: none;
+	}
+}
+
+.agency-usp-tabs--media-left .agency-usp-tabs__root {
+	direction: rtl;
+}
+
+.agency-usp-tabs--media-left .agency-usp-tabs__root > * {
+	direction: ltr;
+}
+
+.agency-content-block--media-left .agency-content-block__split {
+	direction: rtl;
+}
+
+.agency-content-block--media-left .agency-content-block__split > * {
+	direction: ltr;
+}

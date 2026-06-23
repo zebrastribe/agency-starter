@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "agency-starter/faq-section",
+	"title": "FAQ Section",
+	"category": "agency-starter",
+	"icon": "editor-help",
+	"description": "Two-column FAQs with an accordion list and schema-friendly markup.",
+	"keywords": [ "faq", "accordion", "questions", "answers" ],
+	"textdomain": "agency-starter",
+	"attributes": {
+		"heading": { "type": "string", "default": "FAQs" },
+		"items": { "type": "array", "default": [] }
+	},
+	"supports": { "html": false, "align": [ "full" ] },
+	"viewScript": "agency-starter-faq-section",
+	"render": "file:./render.php"
+}

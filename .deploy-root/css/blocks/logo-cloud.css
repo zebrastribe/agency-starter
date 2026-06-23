@@ -1,0 +1,134 @@
+/**
+ * Logo Cloud — full-width marquee.
+ */
+.agency-logo-cloud {
+	overflow: hidden;
+}
+
+.agency-logo-cloud.agency-section--compact {
+	padding-block: var(--wp--preset--spacing--xl, 2rem);
+}
+
+.agency-logo-cloud__frame {
+	display: flex;
+	flex-direction: column;
+	gap: var(--agency-stack-gap-lg, var(--wp--preset--spacing--xl, 2rem));
+}
+
+.agency-logo-cloud__label {
+	font-size: var(--wp--preset--font-size--xs, 0.75rem);
+	font-weight: 600;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--wp--preset--color--slate, #6b7280);
+	margin: 0;
+	text-align: center;
+}
+
+.agency-logo-cloud__viewport {
+	width: 100%;
+	overflow: hidden;
+	-webkit-mask-image: linear-gradient(
+		90deg,
+		transparent,
+		#000 6%,
+		#000 94%,
+		transparent
+	);
+	mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+}
+
+.agency-logo-cloud__track {
+	display: flex;
+	width: max-content;
+	will-change: transform;
+}
+
+.agency-logo-cloud__list {
+	display: flex;
+	flex-shrink: 0;
+	align-items: center;
+	gap: clamp(2rem, 5vw, 4rem);
+	margin: 0;
+	padding: 0 clamp(1rem, 4vw, 2rem);
+	list-style: none;
+}
+
+.agency-logo-cloud__item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	margin: 0;
+	opacity: 0.72;
+	filter: grayscale(100%);
+	color: var(--wp--preset--color--foreground, #374151);
+	transition: opacity 0.15s ease, filter 0.15s ease;
+}
+
+.agency-logo-cloud__item:hover {
+	opacity: 1;
+	filter: grayscale(0%);
+}
+
+.agency-logo-cloud__item img {
+	display: block;
+	max-height: 2.5rem;
+	width: auto;
+	max-width: 9rem;
+	object-fit: contain;
+}
+
+/* Static grid when not enough logos to scroll */
+.agency-logo-cloud.is-static .agency-logo-cloud__viewport {
+	-webkit-mask-image: none;
+	mask-image: none;
+	overflow: visible;
+}
+
+.agency-logo-cloud.is-static .agency-logo-cloud__track {
+	width: 100%;
+	justify-content: center;
+}
+
+.agency-logo-cloud.is-static .agency-logo-cloud__list {
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: var(--agency-container-size, 75rem);
+	margin-inline: auto;
+}
+
+/* Marquee animation */
+.agency-logo-cloud.is-animated .agency-logo-cloud__track {
+	animation: agency-logo-marquee 45s linear infinite;
+}
+
+.agency-logo-cloud.is-animated:hover .agency-logo-cloud__track {
+	animation-play-state: paused;
+}
+
+@keyframes agency-logo-marquee {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-50%);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.agency-logo-cloud.is-animated .agency-logo-cloud__track {
+		animation: none;
+	}
+
+	.agency-logo-cloud.is-animated .agency-logo-cloud__viewport {
+		overflow-x: auto;
+		-webkit-mask-image: none;
+		mask-image: none;
+		scrollbar-width: none;
+	}
+
+	.agency-logo-cloud.is-animated .agency-logo-cloud__viewport::-webkit-scrollbar {
+		display: none;
+	}
+}

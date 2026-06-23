@@ -1,0 +1,22 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "agency-starter/usp-tabs",
+	"title": "USP Tabs",
+	"category": "agency-starter",
+	"icon": "table-row-after",
+	"description": "Vertical accordion USP section with optional intro text and swappable preview panel.",
+	"keywords": [ "tabs", "usp", "services", "accordion" ],
+	"textdomain": "agency-starter",
+	"attributes": {
+		"eyebrow": { "type": "string", "default": "Lorem ipsum partner" },
+		"heading": { "type": "string", "default": "Lorem ipsum dolor sit amet" },
+		"lead": { "type": "string", "default": "" },
+		"showLead": { "type": "boolean", "default": true },
+		"mediaPosition": { "type": "string", "default": "right" },
+		"items": { "type": "array", "default": [] }
+	},
+	"viewScript": "agency-starter-usp-tabs",
+	"supports": { "html": false, "align": [ "full" ] },
+	"render": "file:./render.php"
+}

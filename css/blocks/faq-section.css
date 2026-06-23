@@ -1,0 +1,86 @@
+/**
+ * FAQ Section — two-column heading + accordion.
+ */
+
+.agency-faq-section__split {
+	display: grid;
+	gap: var(--wp--preset--spacing--2xl, 3rem);
+	align-items: start;
+}
+
+@media (min-width: 48em) {
+	.agency-faq-section__split {
+		grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
+	}
+}
+
+.agency-faq-section__title {
+	margin: 0;
+}
+
+.agency-faq-section__list {
+	display: flex;
+	flex-direction: column;
+}
+
+.agency-faq__item {
+	border-bottom: 1px solid var(--wp--preset--color--border, #e5e7eb);
+}
+
+.agency-faq__item[open] {
+	background-color: var(--wp--preset--color--surface-alt, #fafafa);
+}
+
+.agency-faq__summary {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--wp--preset--spacing--md, 1rem);
+	padding: var(--wp--preset--spacing--lg, 1.5rem);
+	cursor: pointer;
+	font-size: var(--wp--preset--font-size--lg, 1.125rem);
+	font-weight: 600;
+	line-height: 1.35;
+	list-style: none;
+}
+
+.agency-faq__summary::-webkit-details-marker {
+	display: none;
+}
+
+.agency-faq__question {
+	flex: 1;
+	min-width: 0;
+}
+
+.agency-faq__summary::after {
+	content: '+';
+	flex-shrink: 0;
+	display: grid;
+	place-items: center;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 999px;
+	background-color: var(--wp--preset--color--surface-dark, #1f2937);
+	color: var(--wp--preset--color--inverse, #fff);
+	font-size: 1.25rem;
+	font-weight: 500;
+	line-height: 1;
+	pointer-events: none;
+}
+
+.agency-faq__item[open] .agency-faq__summary::after {
+	content: '−';
+}
+
+.agency-faq__answer {
+	padding: 0 var(--wp--preset--spacing--lg, 1.5rem) var(--wp--preset--spacing--lg, 1.5rem);
+	color: var(--wp--preset--color--foreground, #1f2937);
+	line-height: 1.65;
+}
+
+@media (max-width: 47.99em) {
+	.agency-faq-section__title {
+		font-size: var(--wp--preset--font-size--2xl, 1.75rem);
+	}
+}

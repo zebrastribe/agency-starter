@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="Image placeholder">
+  <rect width="960" height="540" fill="#E2E8F0"/>
+  <g transform="translate(480 270)">
+    <circle cx="-60" cy="-20" r="28" fill="#CBD5E1"/>
+    <path d="M-160 50 L-70 -30 L-20 0 L50 -50 L160 50 Z" fill="#CBD5E1" opacity="0.85"/>
+  </g>
+</svg>

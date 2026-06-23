@@ -1,0 +1,34 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "agency-starter/hero-interactive",
+	"title": "Interactive Hero",
+	"category": "agency-starter",
+	"icon": "cover-image",
+	"description": "Split hero: colored content column left, media slider right.",
+	"keywords": [ "hero", "slider", "interactive", "split" ],
+	"textdomain": "agency-starter",
+	"attributes": {
+		"eyebrow": { "type": "string", "default": "" },
+		"heading": { "type": "string", "default": "Hire, manage, pay, and equip anyone," },
+		"headingAccent": { "type": "string", "default": "anywhere." },
+		"lead": {
+			"type": "string",
+			"default": "Payroll, HR, IT, and immigration for every worker type. All in one platform from one trusted partner."
+		},
+		"primaryCtaLabel": { "type": "string", "default": "Book a demo" },
+		"primaryCtaUrl": { "type": "string", "default": "/contact/" },
+		"secondaryCtaLabel": { "type": "string", "default": "" },
+		"secondaryCtaUrl": { "type": "string", "default": "" },
+		"fullViewport": { "type": "boolean", "default": true },
+		"mediaImageDisplay": { "type": "string", "default": "inline" },
+		"contentColor": { "type": "string", "default": "primary" },
+		"mediaColor": { "type": "string", "default": "surface-dark" },
+		"headingAccentColor": { "type": "string", "default": "secondary" },
+		"slides": { "type": "array", "default": [] },
+		"items": { "type": "array", "default": [] }
+	},
+	"supports": { "html": false, "align": [ "full" ] },
+	"viewScript": "agency-starter-hero-interactive",
+	"render": "file:./render.php"
+}
